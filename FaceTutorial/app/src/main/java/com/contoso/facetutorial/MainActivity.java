@@ -52,7 +52,7 @@ public class MainActivity extends Activity {
                 imageView.setImageBitmap(bitmap);
 
                 // This is the new addition.
-                // detectAndFrame(bitmap);
+                detectAndFrame(bitmap);
 
             } catch (IOException e) {
                 e.printStackTrace();
