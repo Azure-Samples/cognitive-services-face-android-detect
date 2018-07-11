@@ -13,10 +13,16 @@ import android.graphics.*;
 import android.widget.*;
 import android.provider.*;
 
+import com.microsoft.projectoxford.face.*;
+import com.microsoft.projectoxford.face.contract.*;
+
 public class MainActivity extends Activity {
 
     private final int PICK_IMAGE = 1;
     private ProgressDialog detectionProgressDialog;
+
+    private FaceServiceClient faceServiceClient =
+            new FaceServiceRestClient("your API endpoint", "<Subscription Key>");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
