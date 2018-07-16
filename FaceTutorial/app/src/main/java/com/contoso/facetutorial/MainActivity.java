@@ -14,7 +14,13 @@ import com.microsoft.projectoxford.face.*;
 import com.microsoft.projectoxford.face.contract.*;
 
 public class MainActivity extends Activity {
+    // Replace `<API endpoint>` with the Azure region associated with
+    // your subscription key. For example,
+    // apiEndpoint = "https://westcentralus.api.cognitive.microsoft.com/face/v1.0"
     private final String apiEndpoint = "<API endpoint>";
+
+    // Replace `<Subscription Key>` with your subscription key.
+    // For example, subscriptionKey = "0123456789abcdef0123456789ABCDEF"
     private final String subscriptionKey = "<Subscription Key>";
 
     private final FaceServiceClient faceServiceClient =
@@ -53,8 +59,8 @@ public class MainActivity extends Activity {
                 ImageView imageView = findViewById(R.id.imageView1);
                 imageView.setImageBitmap(bitmap);
 
-                // Uncomment
-                //detectAndFrame(bitmap);
+                // Comment out for tutorial
+                detectAndFrame(bitmap);
             } catch (IOException e) {
                 e.printStackTrace();
             }

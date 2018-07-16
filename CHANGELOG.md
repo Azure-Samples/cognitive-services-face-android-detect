@@ -1,4 +1,4 @@
-## Detect and frame faces in an image on Android Changelog
+## Detect and frame faces in an image on Android - Changelog
 
 # 1.4.3 (2018-07-11)
 
