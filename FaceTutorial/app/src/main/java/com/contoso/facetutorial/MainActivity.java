@@ -14,14 +14,11 @@ import com.microsoft.projectoxford.face.*;
 import com.microsoft.projectoxford.face.contract.*;
 
 public class MainActivity extends Activity {
-    // Replace `<API endpoint>` with the Azure region associated with
-    // your subscription key. For example,
-    // apiEndpoint = "https://westcentralus.api.cognitive.microsoft.com/face/v1.0"
-    private final String apiEndpoint = "<API endpoint>";
-
-    // Replace `<Subscription Key>` with your subscription key.
-    // For example, subscriptionKey = "0123456789abcdef0123456789ABCDEF"
-    private final String subscriptionKey = "<Subscription Key>";
+    
+    // Add your Face endpoint to your environment variables.
+    private final String apiEndpoint = System.getenv("FACE_ENDPOINT");
+    // Add your Face subscription key to your environment variables.
+    private final String subscriptionKey = System.getenv("FACE_SUBSCRIPTION_KEY");
 
     private final FaceServiceClient faceServiceClient =
             new FaceServiceRestClient(apiEndpoint, subscriptionKey);
