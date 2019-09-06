@@ -1,5 +1,6 @@
 package com.contoso.facetutorial;
 
+// <snippet_imports>
 import java.io.*;
 import java.lang.Object.*;
 import android.app.*;
@@ -10,12 +11,15 @@ import android.view.*;
 import android.graphics.*;
 import android.widget.*;
 import android.provider.*;
+// </snippet_imports>
 
+// <snippet_face_imports>
 import com.microsoft.projectoxford.face.*;
 import com.microsoft.projectoxford.face.contract.*;
+// </snippet_face_imports>
 
 public class MainActivity extends Activity {
-    
+    // <snippet_mainactivity_fields>
     // Add your Face endpoint to your environment variables.
     private final String apiEndpoint = System.getenv("FACE_ENDPOINT");
     // Add your Face subscription key to your environment variables.
@@ -26,7 +30,9 @@ public class MainActivity extends Activity {
 
     private final int PICK_IMAGE = 1;
     private ProgressDialog detectionProgressDialog;
+    // </snippet_mainactivity_fields>
 
+    // <snippet_mainactiviy_methods>
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,8 +69,10 @@ public class MainActivity extends Activity {
                 e.printStackTrace();
             }
         }
+        // </snippet_mainactivity_methods>
     }
 
+    // <snippet_detection_methods>
     // Detect faces by uploading a face image.
     // Frame faces after detection.
     private void detectAndFrame(final Bitmap imageBitmap) {
@@ -146,7 +154,9 @@ public class MainActivity extends Activity {
                     }})
                 .create().show();
     }
+    // </snippet_detection_methods>
 
+    // <snippet_drawrectangles>
     private static Bitmap drawFaceRectanglesOnBitmap(
             Bitmap originalBitmap, Face[] faces) {
         Bitmap bitmap = originalBitmap.copy(Bitmap.Config.ARGB_8888, true);
@@ -169,4 +179,5 @@ public class MainActivity extends Activity {
         }
         return bitmap;
     }
+    // </snippet_drawrectangles>
 }

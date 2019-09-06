@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.contoso.facetutorial">
 
+    <!-- <snippet_manifest_entry> -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- </snippet_manifest_entry> -->
 
     <application
         android:allowBackup="true"
