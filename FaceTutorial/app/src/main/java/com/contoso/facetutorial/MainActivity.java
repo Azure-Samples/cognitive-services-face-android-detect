@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
     private ProgressDialog detectionProgressDialog;
     // </snippet_mainactivity_fields>
 
-    // <snippet_mainactiviy_methods>
+    // <snippet_mainactivity_methods>
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
