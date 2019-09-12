@@ -1,7 +1,11 @@
 ---
-services: cognitive-services, face
-platforms: android, java
-author: noellelacharite
+page_type: sample
+languages:
+- java
+products:
+- azure
+description: "This repository contains the sample discussed in Create an Android app to detect and frame faces in an image."
+urlFragment: cognitive-services-face-android-detect
 ---
 
 # Detect and frame faces in an image on Android
