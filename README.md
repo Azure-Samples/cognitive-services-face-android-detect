@@ -25,7 +25,7 @@ This project framework provides the following features:
 
 ### Prerequisites
 
-- You need a subscription key to run the sample. You can get free trial subscription keys from [Try Cognitive Services](https://azure.microsoft.com/try/cognitive-services/?api=face-api).
+- You need a subscription key to run the sample. [Create a new Azure account, and try Cognitive Services for free.](https://azure.microsoft.com/free/cognitive-services/)
 - [Android Studio](https://developer.android.com/studio/) with minimum SDK 22 (required by the Face client library).
 - The [com.microsoft.projectoxford : face : 1.4.3](http://search.maven.org/#artifactdetails%7Ccom.microsoft.projectoxford%7Cface%7C1.4.3%7Caar) Java client library from Maven. It isn't necessary to download the package.
 
