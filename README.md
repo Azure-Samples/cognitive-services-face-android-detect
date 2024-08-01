@@ -10,6 +10,9 @@ urlFragment: cognitive-services-face-android-detect
 
 # Detect and frame faces in an image on Android
 
+> **Note:**
+> This repository has been archived. Please visit [aka.ms/FaceSamples](https://aka.ms/FaceSamples) to get started with the latest Face SDK samples.
+
 This repository contains the sample discussed in [Create an Android app to detect and frame faces in an image](https://docs.microsoft.com/en-us/azure/cognitive-services/face/tutorials/faceapiinjavaforandroidtutorial). The sample uses the Java client library for the Cognitive Services Face service.
 
 ## Features
